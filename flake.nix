@@ -11,14 +11,9 @@
       nixpkgs,
     }:
     let
-      defaultSystems = [
-        "aarch64-linux"
-        "aarch64-darwin"
-        "x86_64-darwin"
-        "x86_64-linux"
-      ];
+      supportedSystems = nixpkgs.lib.systems.flakeExposed;
       forAllSystems =
-        function: nixpkgs.lib.genAttrs defaultSystems (system: function nixpkgs.legacyPackages.${system});
+        function: nixpkgs.lib.genAttrs supportedSystems (system: function nixpkgs.legacyPackages.${system});
     in
     {
       devShells = forAllSystems (pkgs: {
@@ -26,7 +21,7 @@
           with pkgs;
           mkShell {
             shellHook = ''
-              export PS1="(ludihan.github.io) $PS1"
+              export PS1="(ludihan.github.io devshell) $PS1"
             '';
             packages = [
               zola
