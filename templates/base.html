@@ -1,0 +1,38 @@
+{% set base_url = get_url(path="") %}
+{% set projects_url = get_url(path="@/projects/_index.md") %}
+{% set blog_url = get_url(path="@/blog/_index.md") %}
+{% set about_url = get_url(path="@/about/index.md") %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>ludihan</title>
+    <link rel="stylesheet" href="{{ get_url(path="base.css", trailing_slash=false) }}">
+  </head>
+
+  <body>
+    <section class="section">
+      <div class="container">
+
+        <header>
+          <nav class="navbar">
+            <h1><a href="{{ base_url }}">{{ config.title }}</a></h1>
+            <div>
+              <a href="{{ projects_url }}">projects</a>
+              <a href="{{ blog_url }}">blog</a>
+              <a href="{{ about_url }}">about</a>
+            </div>
+          </nav>
+        </header>
+
+        <main>
+          {% block content %} {% endblock content %}
+        </main>
+
+      </div>
+    </section>
+  </body>
+
+</html>

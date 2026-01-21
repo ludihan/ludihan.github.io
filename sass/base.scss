@@ -1,0 +1,70 @@
+$font-stack: sans-serif;
+$background-color: #1a1a1a;
+$text-color: #ffffff;
+$selected: #D1A159;
+
+body {
+  margin: 0;
+  background: $background-color;
+  color: $text-color;
+  font-size: 16px;
+  font-family: $font-stack;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 42em;
+  margin: 2em auto 0;
+}
+
+.navbar {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  div {
+    display: flex;
+    align-self: center;
+
+    a {
+      margin-left: 2em;
+    }
+  }
+}
+
+header {
+  flex-direction: row;
+  display: flex;
+}
+
+a {
+  color: $text-color;
+  text-decoration: none;
+}
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+a:hover,
+a:focus {
+  color: $selected;
+  box-shadow: 0 1px 0 $selected;
+  transition: all 0.1s linear;
+}
+
+a:active {
+  color: $selected;
+  opacity: 0.9;
+  box-shadow: 0 1px 0 $selected;
+}
+
+a.active {
+  color: $selected;
+  transition: all 0.1s linear;
+}
