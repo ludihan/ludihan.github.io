@@ -1,7 +1,7 @@
 # The URL the site will be built for
 title = "ludihan"
 description = "ludihan's personal website"
-base_url = "https://ludihan.github.io"
+base_url = "https://ludihan.xyz"
 minify_html = true
 compile_sass = true
 build_search_index = true
