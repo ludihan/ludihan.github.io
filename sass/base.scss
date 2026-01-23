@@ -7,14 +7,31 @@ body {
   margin: 0;
   background: $background-color;
   color: $text-color;
-  font-size: 16px;
+  font-size: 1rem;
   font-family: $font-stack;
   line-height: 1.5;
 }
 
-.container {
-  max-width: 42em;
-  margin: 2em auto 0;
+@media only screen and (max-device-width: 480px) {
+  body {
+    font-size: 2rem;
+  }
+
+  .container {
+    max-width: 90%;
+    margin: 2em auto 0;
+  }
+}
+
+@media only screen and (min-device-width: 480px) {
+  body {
+    font-size: 1rem;
+  }
+
+  .container {
+    max-width: 40%;
+    margin: 2em auto 0;
+  }
 }
 
 .navbar {
