@@ -38,10 +38,7 @@ body {
   display: flex;
   width: 100%;
   justify-content: space-between;
-
-  h1 {
-    font-size: 1.5em;
-  }
+  font-size: 1.3em;
 
   div {
     display: flex;
@@ -84,4 +81,10 @@ a:active {
 a.active {
   color: $selected;
   transition: all 0.1s linear;
+}
+
+.column {
+  display: flex;
+  justify-content: space-between;
+  width: 100%
 }

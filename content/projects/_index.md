@@ -1,4 +1,6 @@
 +++
-title = "About"
-template = "about.html"
+title = "Projects"
+sort_by = "date"
+template = "blog.html"
+page_template = "blog-page.html"
 +++

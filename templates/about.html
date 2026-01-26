@@ -1,6 +1,22 @@
 {% extends "base.html" %}
 
 {% block content %}
+
+{% set github = resize_image(path="/about/github.png", height=150, op="fit_height") %}
+{% set linkedin = resize_image(path="/about/linkedin.png", height=150, op="fit_height") %}
+
 <h1 class="title">
+  {{ section.title }}
 </h1>
+{{ section.content | safe }}
+
+<div class="links">
+  <a href="https://github.com/ludihan" target="_blank">
+    <img src="{{ github.url }}"/>
+  </a>
+  <a href="https://linkedin.com/in/lucca-han/?locale=en" target="_blank">
+    <img src="{{ linkedin.url }}"/>
+  </a>
+</div>
+
 {% endblock content %}

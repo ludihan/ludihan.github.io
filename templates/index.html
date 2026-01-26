@@ -2,9 +2,17 @@
 
 {% block content %}
 <h1 class="title">
-  I'm a developer, most of my experience is in web development, gamedev and devops
+  Hi! I'm Lucca, known online as 
+  <a href="{{ get_url(path="@/about/_index.md") }}">
+    ludihan
+  </a>
 </h1>
-<p>Not much to see here atm...</p>
-<p>I plan to make some posts tho</p>
-<p><a href="{{ get_url(path='@/blog/_index.md') }}">Posts</a>.</p>
+<div class="column">
+  <div>
+    <h2><a href="{{ get_url(path='@/projects/_index.md') }}">Projects</a></h2>
+  </div>
+  <div>
+    <h2><a href="{{ get_url(path='@/blog/_index.md') }}">Blog</a></h2>
+  </div>
+</div>
 {% endblock content %}

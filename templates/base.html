@@ -1,14 +1,22 @@
 {% set base_url = get_url(path="") %}
 {% set projects_url = get_url(path="@/projects/_index.md") %}
 {% set blog_url = get_url(path="@/blog/_index.md") %}
-{% set about_url = get_url(path="@/about/index.md") %}
+{% set about_url = get_url(path="@/about/_index.md") %}
 
 <!DOCTYPE html>
 <html lang="en">
 
   <head>
     <meta charset="utf-8">
-    <title>ludihan</title>
+    <title>
+      {%if section.title %}
+        {{section.title}} ~ ludihan
+      {%elif page.title%}
+        {{page.title}} ~ ludihan
+      {%else%}
+        ludihan
+      {%endif%}
+    </title>
     <link rel="stylesheet" href="{{ get_url(path="base.css", trailing_slash=false) }}">
   </head>
 
@@ -18,7 +26,7 @@
 
         <header>
           <nav class="navbar">
-            <h1><a href="{{ base_url }}">{{ config.title }}</a></h1>
+            <a href="{{ base_url }}">{{ config.title }}</a>
             <div>
               <a href="{{ projects_url }}">projects</a>
               <a href="{{ blog_url }}">blog</a>
@@ -26,7 +34,6 @@
             </div>
           </nav>
         </header>
-
         <main>
           {% block content %} {% endblock content %}
         </main>
