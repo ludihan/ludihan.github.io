@@ -12,6 +12,10 @@ body {
   line-height: 1.5;
 }
 
+li {
+  font-size: 1.2em;
+}
+
 @media only screen and (max-device-width: 480px) {
   body {
     font-size: 2rem;
