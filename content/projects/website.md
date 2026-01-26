@@ -6,7 +6,7 @@ date = 2026-01-26
 I always wanted a personal space on the internet, and now i have one!
 
 This website is generated using a static file generator called
-[Zola](https://getzola.org/)
+[Zola](https://getzola.org/).
 
 Apart from some initial confunsion in the project structure, it's very easy to
 use.
