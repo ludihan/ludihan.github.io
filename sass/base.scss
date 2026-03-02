@@ -38,7 +38,7 @@ li {
   }
 }
 
-.navbar {
+#navbar {
   display: flex;
   width: 100%;
   justify-content: space-between;
@@ -91,4 +91,9 @@ a.active {
   display: flex;
   justify-content: space-between;
   width: 100%
+}
+
+img  {
+   /* For modern browsers */
+  image-rendering: pixelated; 
 }
