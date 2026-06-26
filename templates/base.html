@@ -10,11 +10,11 @@
     <meta charset="utf-8">
     <title>
       {%if section.title %}
-        {{section.title}} ~ ludihan
+      {{section.title}} ~ ludihan
       {%elif page.title%}
-        {{page.title}} ~ ludihan
+      {{page.title}} ~ ludihan
       {%else%}
-        ludihan
+      ludihan
       {%endif%}
     </title>
     <link rel="stylesheet" href="{{ get_url(path="base.css", trailing_slash=false) }}">
@@ -26,26 +26,22 @@
   </head>
 
   <body>
-    <section class="section">
-      <div class="container">
-        <header>
-          <nav id="navbar">
-            <a href="{{ base_url }}">
-              <img src="/logo-export.png"/>
-            </a>
-            <div>
-              <a href="{{ projects_url }}">projects</a>
-              <a href="{{ blog_url }}">blog</a>
-              <a href="{{ about_url }}">about</a>
-            </div>
-          </nav>
-        </header>
-        <main>
-          {% block content %} {% endblock content %}
-        </main>
-
-      </div>
-    </section>
+  <div class="container">
+      <header>
+        <nav>
+          <a href="{{ base_url }}">ludihan.xyz</a>
+          <div>
+            <a href="{{ projects_url }}">projects</a>
+            <a href="{{ blog_url }}">blog</a>
+            <a href="{{ about_url }}">about</a>
+          </div>
+        </nav>
+      </header>
+      <hr class="nav">
+      <main>
+        {% block content %} {% endblock content %}
+      </main>
+    </div>
   </body>
 
 </html>
