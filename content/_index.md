@@ -1,5 +1,4 @@
 +++
-title = "Welcome!"
 +++
 Hi there! My name is Lucca, I don't actually live on the second floor. I'm
 known online as *ludihan*.
