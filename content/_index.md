@@ -6,6 +6,12 @@ known online as *ludihan*.
 
 I'm a brazilian developer based in Manaus, Amazonas, Brazil.
 
+Here is my contact information:
+
+<a href="https://github.com/ludihan" class="btn-link">Github</a>
+<a href="https://github.com/ludihan" class="btn-link">LinkedIn</a>
+<a href="mailto:luccad.han@gmail.com" class="btn-link">Email</a>
+
 I have many interests and I'm always trying to be a
 jack of all trades, but as of now most of my experience is in web development,
 gamedev and devops.
@@ -32,9 +38,3 @@ My main interests are:
 I use NixOS, btw.
 
 Nice to meet you!
-
-Contact information:
-
-<a href="https://github.com/ludihan" class="btn-link">Github</a>
-<a href="https://github.com/ludihan" class="btn-link">LinkedIn</a>
-<a href="mailto:luccad.han@gmail.com" class="btn-link">Email</a>
