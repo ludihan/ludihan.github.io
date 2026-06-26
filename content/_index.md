@@ -9,7 +9,7 @@ I'm a brazilian developer based in Manaus, Amazonas, Brazil.
 Here is my contact information:
 
 <a href="https://github.com/ludihan" class="btn-link">Github</a>
-<a href="https://github.com/ludihan" class="btn-link">LinkedIn</a>
+<a href="https://linkedin.com/in/lucca-han/" class="btn-link">LinkedIn</a>
 <a href="mailto:luccad.han@gmail.com" class="btn-link">Email</a>
 
 I have many interests and I'm always trying to be a
