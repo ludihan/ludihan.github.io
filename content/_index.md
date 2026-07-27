@@ -33,6 +33,6 @@ My main interests are:
 - Game Development
 - Music
 
-I use openSUSE Tumbleweed, btw.
+I use Void Linux, btw.
 
 Nice to meet you!
