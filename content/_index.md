@@ -33,6 +33,6 @@ My main interests are:
 - Game Development
 - Music
 
-I use Void Linux, btw.
+I use openSUSE, btw.
 
 Nice to meet you!
