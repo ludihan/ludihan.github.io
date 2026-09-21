@@ -9,9 +9,9 @@
   <head>
     <meta charset="utf-8">
     <title>
-      {%if section.title %}
+      {% if section is defined and section.title %}
       {{section.title}} ~ ludihan
-      {%elif page.title%}
+      {% elif page is defined and page.title %}
       {{page.title}} ~ ludihan
       {%else%}
       ludihan
